@@ -29,7 +29,8 @@ function getLogLine(counterObject, fileName, fileReportBody) {
       counterObject.FUNCTION +
       counterObject.EMPTY +
       counterObject.UNKNOWN +
-      counterObject.VARIABLE
+      counterObject.VARIABLE +
+      counterObject.COMMENT
     );
 
   //update stats
