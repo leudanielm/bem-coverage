@@ -1,6 +1,6 @@
 ##BEM Coverage
 
-###A tool to report the BEM coverage for your file
+###A tool to report the BEM coverage for your projects
 #####You can use it both as cli or NodeJS module:
 
 #####CLI:
