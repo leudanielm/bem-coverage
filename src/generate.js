@@ -53,7 +53,14 @@ function generate(configObject, callback) {
               const reportContents = reportBody.join('');
 
               if (util.isFunction(callback)) {
-                callback(reportContents);
+                callback({
+                  report: reportContents,
+                  stats: {
+                    BEM: overallStats.BEM,
+                    NON_BEM: overallStats.NON_BEM,
+                    BEM_RATIO: util.percentage(overallStats.BEM, overallStats.NON_BEM)
+                  }
+                });
               } else {
                 if (util.isFunction(configObject.output)) {
                   fs.writeFile(reportName, reportContents, 'utf8', function writingFinished(err) {
