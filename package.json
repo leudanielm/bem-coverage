@@ -1,18 +1,25 @@
 {
   "name": "bem-coverage",
   "version": "1.0.0",
-  "description": "A CSS Bem Linter",
+  "description": "A BEM coverage tool.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leudanielm/bem-coverage.git"
   },
   "keywords": [
     "bem",
     "linter",
     "css"
   ],
-  "author": "Daniel Leu (leudanielm@gmail.com)",
-  "license": "MIT",
+  "author": "Daniel Leu <leudanielm@gmail.com>",
+  "license": {
+    "type": "MIT",
+    "url": "http://www.opensource.org/licenses/mit-license.php"
+  },
   "bin": {
     "bem-coverage": "./cli.js"
   },
