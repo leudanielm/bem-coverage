@@ -1,0 +1,140 @@
+<html>
+<head>
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica', 'Helvetica Neue', 'Roboto', sans-serif;
+    }
+
+    th, td {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    th {
+      background: #000;
+      color: #fff;
+    }
+
+    .line {
+      position: relative;
+    }
+
+    .line .statement-type {
+      font-size: 11px;
+      color: #2f2f2f;
+      position: absolute;
+      right: 5px;
+    }
+
+    .line:hover,
+    .line:hover .statement-type {
+      background-color: #292929;
+      color: #ffffff;
+    }
+
+    .element,
+    .block,
+    .modifier,
+    .good {
+      background-color: #A1D490;
+    }
+
+    .okay {
+      background-color: #CDD490;
+    }
+
+    .nested-element,
+    .html-tag,
+    .nested-pseudo,
+    .nested-attribute,
+    .bad {
+      background-color: #D49090;
+    }
+
+    .declaration-end,
+    .statement,
+    .css-function,
+    .comment,
+    .attribute,
+    .pseudo,
+    .variable,
+    .doesnt-apply {
+      background-color: #CCCCCC;
+      font-style: italic;
+    }
+    .empty {
+      background-color: #eeeeee;
+    }
+
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<h3>Directory scanned: /Users/leudanielm/projects/angular2-es6-babel-examples/src</h3>
+<h4>Total BEM statements: 13</h4>
+<h4>Total non-BEM statements: 24</h4>
+<h4>Overall BEM Ratio: 54&#37;</h4>
+<span>Click a log entry to see the detailed report of the file.</span>
+<table width="100%">
+  <thead>
+  <th>Filename</th>
+  <th>Elements</th>
+  <th>Blocks</th>
+  <th>Modifiers</th>
+  <th>CSS Statements</th>
+  <th>BEM Ratio</th>
+  </thead>
+  <tbody>
+      <tr class="expander bad">
+        <td>/Users/leudanielm/projects/angular2-es6-babel-examples/src/styles/app.scss</td>
+        <td>0</td>
+        <td>2</td>
+        <td>0</td>
+        <td>41</td>
+        <td>18%</td>
+      </tr><tr class="none">
+        <td class="code" colspan="6">
+          <pre>
+            <div class="report"><div class="line html-tag">html, body {<span class="statement-type">html tag</span></div><div class="line statement">  width: 100%;<span class="statement-type">statement</span></div><div class="line statement">  height: 100%;<span class="statement-type">statement</span></div><div class="line statement">  margin: 0;<span class="statement-type">statement</span></div><div class="line unknown">  padding: 0<span class="statement-type">unknown</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line unknown">body, input[text], button {<span class="statement-type">unknown</span></div><div class="line statement">  color: #888;<span class="statement-type">statement</span></div><div class="line statement">  font-family: Cambria, Georgia;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line html-tag">h1 {<span class="statement-type">html tag</span></div><div class="line statement">  color: #369;<span class="statement-type">statement</span></div><div class="line statement">  font-family: Arial, Helvetica, sans-serif;<span class="statement-type">statement</span></div><div class="line statement">  font-size: 250%;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line html-tag">h2 {<span class="statement-type">html tag</span></div><div class="line statement">  color: #369;<span class="statement-type">statement</span></div><div class="line statement">  font-family: Arial, Helvetica, sans-serif;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line html-tag">h3 {<span class="statement-type">html tag</span></div><div class="line statement">  color: #444;<span class="statement-type">statement</span></div><div class="line statement">  font-weight: lighter;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line html-tag">button {<span class="statement-type">html tag</span></div><div class="line statement">  padding: 0.2em;<span class="statement-type">statement</span></div><div class="line unknown">  font-size: 14px<span class="statement-type">unknown</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line html-tag">ul {<span class="statement-type">html tag</span></div><div class="line statement">  list-style-type: none;<span class="statement-type">statement</span></div><div class="line statement">  margin-left: 1em;<span class="statement-type">statement</span></div><div class="line statement">  padding: 0;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line html-tag">li {<span class="statement-type">html tag</span></div><div class="line statement">  cursor: pointer;<span class="statement-type">statement</span></div><div class="line statement">  position: relative;<span class="statement-type">statement</span></div><div class="line statement">  left: 0;<span class="statement-type">statement</span></div><div class="line statement">  transition: all 0.2s ease;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line unknown">li:hover {<span class="statement-type">unknown</span></div><div class="line statement">  color: #369;<span class="statement-type">statement</span></div><div class="line statement">  background-color: #EEE;<span class="statement-type">statement</span></div><div class="line statement">  left: .2em;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line comment">/* route-link anchor tags */<span class="statement-type">comment</span></div><div class="line html-tag">a {<span class="statement-type">html tag</span></div><div class="line statement">  padding: 5px;<span class="statement-type">statement</span></div><div class="line statement">  text-decoration: none;<span class="statement-type">statement</span></div><div class="line statement">  font-family: Arial, Helvetica, sans-serif;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line unknown">a:visited, a:link {<span class="statement-type">unknown</span></div><div class="line statement">  color: #444;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line unknown">a:hover {<span class="statement-type">unknown</span></div><div class="line statement">  color: white;<span class="statement-type">statement</span></div><div class="line statement">  background-color: #1171a3;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line unknown">a.router-link-active {<span class="statement-type">unknown</span></div><div class="line statement">  color: white;<span class="statement-type">statement</span></div><div class="line statement">  background-color: #52b9e9;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line block">.selected {<span class="statement-type">block</span></div><div class="line statement">  background-color: #EEE;<span class="statement-type">statement</span></div><div class="line statement">  color: #369;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line block">.badge {<span class="statement-type">block</span></div><div class="line statement">  font-size: small;<span class="statement-type">statement</span></div><div class="line statement">  color: white;<span class="statement-type">statement</span></div><div class="line statement">  padding: 0.1em 0.7em;<span class="statement-type">statement</span></div><div class="line statement">  background-color: #369;<span class="statement-type">statement</span></div><div class="line statement">  line-height: 1em;<span class="statement-type">statement</span></div><div class="line statement">  position: relative;<span class="statement-type">statement</span></div><div class="line statement">  left: -1px;<span class="statement-type">statement</span></div><div class="line statement">  top: -1px;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div>
+          </pre>
+        </td>
+      </tr>
+    
+      <tr class="expander okay">
+        <td>/Users/leudanielm/projects/angular2-es6-babel-examples/src/styles/slideout-menu.scss</td>
+        <td>4</td>
+        <td>5</td>
+        <td>2</td>
+        <td>58</td>
+        <td>85%</td>
+      </tr><tr class="none">
+        <td class="code" colspan="6">
+          <pre>
+            <div class="report"><div class="line variable">$headerHeight: 100px;<span class="statement-type">variable</span></div><div class="line variable">$slideoutMenuWidth: 256px;<span class="statement-type">variable</span></div><div class="line variable">$headerButtonsWidth: 35px;<span class="statement-type">variable</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line block">.slideout-menu {<span class="statement-type">block</span></div><div class="line statement">  position: fixed;<span class="statement-type">statement</span></div><div class="line statement">  left: 0;<span class="statement-type">statement</span></div><div class="line statement">  top: 0;<span class="statement-type">statement</span></div><div class="line statement">  bottom: 0;<span class="statement-type">statement</span></div><div class="line statement">  right: 0;<span class="statement-type">statement</span></div><div class="line statement">  z-index: 0;<span class="statement-type">statement</span></div><div class="line statement">  width: $slideoutMenuWidth;<span class="statement-type">statement</span></div><div class="line statement">  overflow-y: auto;<span class="statement-type">statement</span></div><div class="line statement">  overflow-scrolling: touch;<span class="statement-type">statement</span></div><div class="line statement">  display: none;<span class="statement-type">statement</span></div><div class="line statement">  margin: 0;<span class="statement-type">statement</span></div><div class="line statement">  padding: 1em;<span class="statement-type">statement</span></div><div class="line statement">  box-sizing: border-box;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line block">.slideout-content {<span class="statement-type">block</span></div><div class="line statement">  position: fixed;<span class="statement-type">statement</span></div><div class="line statement">  top: 0;<span class="statement-type">statement</span></div><div class="line statement">  z-index: 1;<span class="statement-type">statement</span></div><div class="line statement">  height: 100%;<span class="statement-type">statement</span></div><div class="line statement">  width: 100%;<span class="statement-type">statement</span></div><div class="line statement">  margin: 0;<span class="statement-type">statement</span></div><div class="line statement">  overflow: auto;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line block">.slideout-open {<span class="statement-type">block</span></div><div class="line unknown">  body, .slideout-panel {<span class="statement-type">unknown</span></div><div class="line statement">    overflow: hidden;<span class="statement-type">statement</span></div><div class="line declaration-end">  }<span class="statement-type">declaration end</span></div><div class="line nested-element">  .slideout-menu {<span class="statement-type">nested element</span></div><div class="line statement">    display: block;<span class="statement-type">statement</span></div><div class="line declaration-end">  }<span class="statement-type">declaration end</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line block">.slideout-header {<span class="statement-type">block</span></div><div class="line statement">  background-color: #1651ab;<span class="statement-type">statement</span></div><div class="line statement">  color: #FFFFFF;<span class="statement-type">statement</span></div><div class="line statement">  width: 100%;<span class="statement-type">statement</span></div><div class="line statement">  height: $headerHeight;<span class="statement-type">statement</span></div><div class="line statement">  line-height: $headerHeight;<span class="statement-type">statement</span></div><div class="line statement">  box-shadow: 1px 1px 5px 0.1px #000000;<span class="statement-type">statement</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line modifier">  &--fixed {<span class="statement-type">modifier</span></div><div class="line statement">    backface-visibility: hidden;<span class="statement-type">statement</span></div><div class="line statement">    position: fixed;<span class="statement-type">statement</span></div><div class="line statement">    z-index:2;<span class="statement-type">statement</span></div><div class="line statement">    transition: transform 300ms ease;<span class="statement-type">statement</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line nested-element">    &-open {<span class="statement-type">nested element</span></div><div class="line statement">      transform: translate3d(256px, 0px, 0px);<span class="statement-type">statement</span></div><div class="line declaration-end">    }<span class="statement-type">declaration end</span></div><div class="line declaration-end">  }<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line element">  &__btn-left {<span class="statement-type">element</span></div><div class="line statement">    background-image: url("../assets/header_btn_left.png");<span class="statement-type">statement</span></div><div class="line statement">    background-repeat: no-repeat;<span class="statement-type">statement</span></div><div class="line statement">    background-size: $headerButtonsWidth;<span class="statement-type">statement</span></div><div class="line statement">    background-position: center;<span class="statement-type">statement</span></div><div class="line statement">    height: 100%;<span class="statement-type">statement</span></div><div class="line statement">    width: $headerButtonsWidth;<span class="statement-type">statement</span></div><div class="line statement">    display: inline-block;<span class="statement-type">statement</span></div><div class="line statement">    margin-left: 20px;<span class="statement-type">statement</span></div><div class="line declaration-end">  }<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line element">  &__btn-right {<span class="statement-type">element</span></div><div class="line statement">    position: absolute;<span class="statement-type">statement</span></div><div class="line statement">    background-image: url("../assets/header_btn_right.png");<span class="statement-type">statement</span></div><div class="line statement">    background-repeat: no-repeat;<span class="statement-type">statement</span></div><div class="line statement">    background-size: $headerButtonsWidth;<span class="statement-type">statement</span></div><div class="line statement">    background-position: center;<span class="statement-type">statement</span></div><div class="line statement">    height: 100%;<span class="statement-type">statement</span></div><div class="line statement">    width: $headerButtonsWidth;<span class="statement-type">statement</span></div><div class="line statement">    right: 20px;<span class="statement-type">statement</span></div><div class="line statement">    display: inline-block;<span class="statement-type">statement</span></div><div class="line declaration-end">  }<span class="statement-type">declaration end</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line block">.page-content {<span class="statement-type">block</span></div><div class="line statement">  padding-top: $headerHeight;<span class="statement-type">statement</span></div><div class="line statement">  padding-left: 10px;<span class="statement-type">statement</span></div><div class="line statement">  padding-right: 10px;<span class="statement-type">statement</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line element">.slideout__menu {<span class="statement-type">element</span></div><div class="line statement">  margin: 0px;<span class="statement-type">statement</span></div><div class="line statement">  padding: 1em;<span class="statement-type">statement</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line modifier">  &--background {<span class="statement-type">modifier</span></div><div class="line statement">    background-color: rgb(29, 31, 32);<span class="statement-type">statement</span></div><div class="line statement">    background-image: linear-gradient(145deg, rgb(29, 31, 32), rgb(64, 67, 72));<span class="statement-type">statement</span></div><div class="line declaration-end">  }<span class="statement-type">declaration end</span></div><div class="line empty">&nbsp;<span class="statement-type">empty</span></div><div class="line element">  &__title, &__item {<span class="statement-type">element</span></div><div class="line statement">    color: #ffffff;<span class="statement-type">statement</span></div><div class="line declaration-end">  }<span class="statement-type">declaration end</span></div><div class="line declaration-end">}<span class="statement-type">declaration end</span></div>
+          </pre>
+        </td>
+      </tr>
+    </tbody>
+</table>
+</body>
+<script>
+  window.onload = function() {
+    [].slice.call(document.querySelectorAll('.expander'))
+      .forEach(function(element) {
+        element.addEventListener('click', (function() {
+          var toggle = true;
+          return function() {
+            toggle = !toggle;
+            this.nextSibling.classList.toggle('none', toggle);
+          };
+        })());
+      });
+  };
+</script>
+</html>

@@ -1,0 +1,18 @@
+</tbody>
+</table>
+</body>
+<script>
+  window.onload = function() {
+    [].slice.call(document.querySelectorAll('.expander'))
+      .forEach(function(element) {
+        element.addEventListener('click', (function() {
+          var toggle = true;
+          return function() {
+            toggle = !toggle;
+            this.nextSibling.classList.toggle('none', toggle);
+          };
+        })());
+      });
+  };
+</script>
+</html>

@@ -1,0 +1,93 @@
+<html>
+<head>
+  <style type="text/css">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Helvetica', 'Helvetica Neue', 'Roboto', sans-serif;
+    }
+
+    th, td {
+      padding: 5px;
+      font-size: 14px;
+    }
+
+    th {
+      background: #000;
+      color: #fff;
+    }
+
+    .line {
+      position: relative;
+    }
+
+    .line .statement-type {
+      font-size: 11px;
+      color: #2f2f2f;
+      position: absolute;
+      right: 5px;
+    }
+
+    .line:hover,
+    .line:hover .statement-type {
+      background-color: #292929;
+      color: #ffffff;
+    }
+
+    .element,
+    .block,
+    .modifier,
+    .good {
+      background-color: #A1D490;
+    }
+
+    .okay {
+      background-color: #CDD490;
+    }
+
+    .nested-element,
+    .html-tag,
+    .nested-pseudo,
+    .nested-attribute,
+    .bad {
+      background-color: #D49090;
+    }
+
+    .declaration-end,
+    .statement,
+    .css-function,
+    .comment,
+    .attribute,
+    .pseudo,
+    .variable,
+    .doesnt-apply {
+      background-color: #CCCCCC;
+      font-style: italic;
+    }
+    .empty {
+      background-color: #eeeeee;
+    }
+
+    .none {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<h3>Directory scanned: {directory}</h3>
+<h4>Total BEM statements: {totalBem}</h4>
+<h4>Total non-BEM statements: {totalNonBem}</h4>
+<h4>Overall BEM Ratio: {totalBemRatio}&#37;</h4>
+<span>Click a log entry to see the detailed report of the file.</span>
+<table width="100%">
+  <thead>
+  <th>Filename</th>
+  <th>Elements</th>
+  <th>Blocks</th>
+  <th>Modifiers</th>
+  <th>CSS Statements</th>
+  <th>BEM Ratio</th>
+  </thead>
+  <tbody>
