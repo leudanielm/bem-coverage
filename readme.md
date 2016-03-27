@@ -18,3 +18,6 @@ bemCoverage({
   output: '/path/to/report/output/dir'
 });
 ```
+
+#####Sample output:
+![alt tag](http://i.imgur.com/puRovQf.png)
