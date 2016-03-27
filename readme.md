@@ -20,4 +20,4 @@ bemCoverage({
 ```
 
 #####Sample output:
-![alt tag](http://i.imgur.com/puRovQf.png)
+![alt tag](https://i.imgur.com/WPQBCYD.png)
