@@ -10,7 +10,7 @@ bem-coverage --dir=/path/to/css/files --types=css,sass --output=/path/to/report/
 ```
 
 #####NodeJS:
-```
+```javascript
 // Output to folder
 const bemCoverage = require('bem-coverage');
 bemCoverage({
