@@ -61,6 +61,7 @@ function generate(configObject, callback) {
                     BEM_RATIO: util.percentage(overallStats.BEM, overallStats.NON_BEM)
                   }
                 });
+                stats.clearStats();
               } else {
                 if (util.isFunction(configObject.output)) {
                   fs.writeFile(reportName, reportContents, 'utf8', function writingFinished(err) {
@@ -72,9 +73,11 @@ function generate(configObject, callback) {
                     } else {
                       console.log(`Wrote file ${reportName}`);
                     }
+                    stats.clearStats();
                   });
                 } else {
                   console.log(reportContents);
+                  stats.clearStats();
                 }
               }
             }

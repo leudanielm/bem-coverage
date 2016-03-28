@@ -1,4 +1,4 @@
-module.exports = {getStats, updateTotal, updateBem, updateNonBem};
+module.exports = {getStats, updateTotal, updateBem, updateNonBem, clearStats};
 
 var stats = {
   TOTAL: 0,
@@ -20,4 +20,10 @@ function updateNonBem(value) {
 
 function getStats() {
   return stats;
+}
+
+function clearStats() {
+  stats.TOTAL = 0;
+  stats.NON_BEM = 0;
+  stats.BEM = 0;
 }
