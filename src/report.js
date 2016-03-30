@@ -71,10 +71,10 @@ function getCSSStatementType(statementObject, line) {
   if (line.match(constants.MATCHERS.BLOCK) && !line.match(constants.MATCHERS.HTML_TAG)) {
     statementObject.BLOCK++;
     return 'block';
-  } else if (~line.indexOf('__')) {
+  } else if (~line.indexOf('__') && !~line.indexOf('--')) {
     statementObject.ELEMENT++;
     return 'element';
-  } else if (~line.indexOf('--')) {
+  } else if (~line.indexOf('--') && line.indexOf('--') > line.indexOf('__')) {
     statementObject.MODIFIER++;
     return 'modifier';
   } else if (line.match(constants.MATCHERS.NESTED_ELEMENT)) {

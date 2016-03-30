@@ -1,6 +1,6 @@
 {
   "name": "bem-coverage",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A BEM coverage tool.",
   "main": "index.js",
   "scripts": {
