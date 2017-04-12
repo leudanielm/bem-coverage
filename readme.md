@@ -1,9 +1,9 @@
-##BEM Coverage
+## BEM Coverage
 
-###A tool to report the BEM coverage for your projects
-#####You can use it both as cli or NodeJS module:
+### A tool to report the BEM coverage for your projects
+##### You can use it both as cli or NodeJS module:
 
-#####CLI:
+##### CLI:
 ```
 npm install bem-coverage -g
 ```
@@ -18,7 +18,7 @@ cd /path/to/my/css
 bem-coverage > bem-output.html
 ```
 
-#####NodeJS:
+##### NodeJS:
 ```javascript
 // Output to folder
 const bemCoverage = require('bem-coverage');
@@ -39,5 +39,5 @@ bemCoverage({
 });
 ```
 
-#####Sample output:
+##### Sample output:
 ![alt tag](http://i.imgur.com/W3l5Qqx.png)
